@@ -1,10 +1,10 @@
 require "spec_helper"
 
-describe "Referral Listing" do
+RSpec.describe "Referral Listing", type: :feature do
   stub_authorization!
 
   before(:each) do
-    unless example.metadata[:no_referrals]
+    unless RSpec.current_example.metadata[:no_referrals]
       create(:referral_order, created_at: 2.days.from_now, completed_at: 2.days.from_now, state: "complete", number: "R100")
       create(:referral_order, created_at: 1.day.from_now, completed_at: 1.day.from_now, state: "complete", number: "R101")
     end
@@ -31,7 +31,7 @@ describe "Referral Listing" do
       expect(page).not_to have_content("R102")
     end
 
-    it "should have column names" do
+    it "should have column names", js: true do
       expect(page).to have_content("Number")
       expect(page).to have_content("Referral")
       expect(page).to have_content("Date")

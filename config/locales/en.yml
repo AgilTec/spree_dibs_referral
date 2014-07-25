@@ -12,6 +12,8 @@ en:
   cart_referral_subject: Hey
   friend: Friend
   spree:
+    referral_email: Referral email
+    listing_filters: Listing Filters
     admin:
       tab:
         configuration: config

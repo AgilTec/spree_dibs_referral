@@ -1,0 +1,20 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es-MX:
+  referral: Agente
+  referral_checkout_message: "Por favor seleccione al agente que lo esta atendiendo: "
+  nothing: ""
+  completed_referrals: Referidos terminados
+  referral_templates: Plantillas de referidos
+  please_select: Por favor, seleccione una referencia.
+  send_referral: Enviar referido
+  cart_referral_subject: Hey
+  friend: Amigo
+  spree:
+    referral_email:  email de referido
+    listing_filters:  Filtros de listados
+    admin:
+      tab:
+        configuration: configuración
+        dibs_referrals: Referidos

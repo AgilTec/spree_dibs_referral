@@ -1,6 +1,6 @@
 class Initialize < ActiveRecord::Migration
   def up
-    Spree::Role.find_or_create_by_name(:dibs_referral)
+    Spree::Role.where(name: :dibs_referral).first_or_create
     add_column :spree_orders, :dibs_referral_id, :integer
     add_index :spree_orders, :dibs_referral_id, name: 'dibs_referral_id_ix'
   end

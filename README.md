@@ -13,12 +13,12 @@ Installation
 ============
 
 The master branch of spree_dibs_referral is compatible with Ruby 1.9.x
-and Spree 1.3.  There are stable branches for Spree 1.1, 1.2 and 1.3.
+and Spree master.  There are stable branches for Spree 1.1, 1.2 and 1.3.
 Use the appropriate branch for your version as shown below.
 
 1. Edit your Gemfile, adding the line:
 
-`gem 'spree_dibs_referral', :git => 'git://github.com/binaryphile/spree_dibs_referral, :branch => '1-3-stable'`
+`gem 'spree_dibs_referral', github: 'AgilTec/spree_dibs_referral', :branch => 'master'`
 
 2. Run the following commands:
 
