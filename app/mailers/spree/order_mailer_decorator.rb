@@ -19,10 +19,10 @@ Spree::OrderMailer.class_eval do
     else
       mail(to: order.email, from: from_address, subject: subject)
     end
+  end
 
-    private
-      def find_order(order)
-        @order = order.is_a?(Spree::Order) ? order : Spree::Order.find(order)
-      end
+  private
+  def find_order(order)
+    @order = order.is_a?(Spree::Order) ? order : Spree::Order.find(order)
   end
 end
